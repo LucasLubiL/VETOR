@@ -1,15 +1,15 @@
 Algoritmo "semnome"
 
-//FaÁa um programa que trabalhe com um vetor de tamanho 15. O programa deve
+//Fa√ßa um programa que trabalhe com um vetor de tamanho 15. O programa deve
 //fornecer o seguinte menu:
-//a) Cadastrar valor: pede um Ìndice e um valor para o usu·rio, insere o valor
-//digitado no Ìndice informado.
-//b) Somar a um valor: pede um Ìndice e um valor para o usu·rio, apÛs isso, faz
-//uma soma do valor informado com o valor que existia no Ìndice anteriormente.
-//c) Multiplicar a um valor: pede um Ìndice e um valor para o usu·rio, apÛs isso,
-//faz uma multiplicaÁ„o do valor informado com o valor que existia no Ìndice
+//a) Cadastrar valor: pede um √≠ndice e um valor para o usu√°rio, insere o valor
+//digitado no √≠ndice informado.
+//b) Somar a um valor: pede um √≠ndice e um valor para o usu√°rio, ap√≥s isso, faz
+//uma soma do valor informado com o valor que existia no √≠ndice anteriormente.
+//c) Multiplicar a um valor: pede um √≠ndice e um valor para o usu√°rio, ap√≥s isso,
+//faz uma multiplica√ß√£o do valor informado com o valor que existia no √≠ndice
 //anteriormente.
-//d) Incrementar a todos os valores: percorre todas as posiÁıes do vetor e
+//d) Incrementar a todos os valores: percorre todas as posi√ß√µes do vetor e
 //incrementa os valores em 1.
 //e) Listar todos os valores: imprime na tela todos os valores que existem no vetor.
 //f) Sair do programa
@@ -24,13 +24,8 @@ Var
 
 Inicio
 
-    para i de 0 ate 14 passo 1 faca
-      escreval("Digite um valor real")
-      leia(valores[i])
-    fimpara
-
     repita
-     escreval("Digite a opÁao desejada")
+     escreval("Digite a op√ßao desejada")
      escreval
      escreval("Digite 1 para Cadastrar Valor")
      escreval("Digite 2 para Somar a um valor do valor anterior")
@@ -43,7 +38,7 @@ Inicio
      leia(opcao)
     
      enquanto (opcao<1) ou (opcao>6) faca
-       escreval("Digite novamente a opÁao")
+       escreval("Digite novamente a op√ßao")
        leia(opcao)
      fimenquanto
 
@@ -53,7 +48,7 @@ Inicio
     
        Caso 1
     
-        escreval("Digite a posiÁao desejada(De 0 ‡ 14)")
+        escreval("Digite a posi√ßao desejada(De 0 √† 14)")
         leia(i)
        
         escreval("Digite o valor desejado")
@@ -61,27 +56,27 @@ Inicio
        
        Caso 2
     
-        escreval("Digite a posiÁao desejada(De 0 ‡ 14)")
+        escreval("Digite a posi√ßao desejada(De 0 √† 14)")
         leia(i)
-        i<-i-1
+        
         escreval("Digite o valor desejado")
         leia(soma)
        
         valores[i]<-valores[i]+soma
        
-        escreval("O valor somado È de ",valores[i])
+        escreval("O valor somado √© de ",valores[i])
        
        Caso 3
     
-        escreval("Digite a posiÁao desejada(De 0 ‡ 14)")
+        escreval("Digite a posi√ßao desejada(De 0 √† 14)")
         leia(i)
-        i<-i-1
+        
         escreval("Digite o valor desejado")
         leia(mult)
        
         valores[i]<-valores[i]*mult
        
-        escreval("O valor multiplicado È de ",valores[i])
+        escreval("O valor multiplicado √© de ",valores[i])
        
        Caso 4
 
